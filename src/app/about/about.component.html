@@ -1,0 +1,22 @@
+<style>
+    .container {
+        width: 100%;
+        height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container>p {
+        width: 75%;
+    }
+</style>
+<div class="container">
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique, tenetur, nam aspernatur ratione rem porro esse animi facere saepe soluta ab nobis doloribus eum quidem ipsum adipisci facilis ipsam. Reiciendis. Lorem ipsum, dolor sit amet consectetur
+        adipisicing elit. Suscipit laudantium sunt iure fugiat unde, consequatur similique, minus autem possimus eos quaerat a delectus, est repellat repudiandae quos vel ratione at?</p>
+    <h3>Listázott tennivalók DataService segítségével:</h3>
+    <p *ngFor="let todo of todos"> {{ todo }} </p>
+    <a s (click)="sendMeHome()">Vissza a főoldalra</a>
+
+</div>

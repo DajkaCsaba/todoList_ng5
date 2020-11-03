@@ -1,0 +1,22 @@
+<div class="container color-dark">
+    <div class="col">
+        <p>Tennivalók hozzáadása:</p>
+    </div>
+    <div class="col">
+        <p>Tennivalóim ({{ todoCounter }}):</p>
+    </div>
+</div>
+<div class="container color-light" [@todos]="todos.length">
+    <div class="col">
+        <p class="smt">Használd az alábbi beviteli mezőt, új tennivaló hozzáadásához.</p>
+        <form action="">
+            <input type="text" class="text" name="item" placeholder="Tennivalóm..." [(ngModel)]="todoText">
+            <input type="submit" class="btn" value="Hozzáad" (click)="addItem()">
+        </form>
+    </div>
+    <div class="col">
+        <p class="todo-container" *ngFor="let todo of todos; let i = index" (click)="removeItem(i)">
+            {{ todo }}
+        </p>
+    </div>
+</div>

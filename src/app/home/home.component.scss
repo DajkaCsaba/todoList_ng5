@@ -1,0 +1,49 @@
+.container {
+    display: grid;
+    grid-template-columns: 50% auto;
+}
+
+.col {
+    padding: .4rem 1.3rem;
+}
+
+.col>p {
+    font-weight: bolder;
+}
+
+.color-dark {
+    background: rgb(41, 41, 41);
+}
+
+.color-light {
+    background: rgb(187, 187, 187);
+}
+
+.smt {
+    font-weight: lighter !important;
+}
+
+input.text {
+    border: 0;
+    padding: 1rem;
+    width: 80%;
+    margin-bottom: 2rem;
+}
+
+input.btn {
+    border: 0;
+    display: block;
+    padding: 1rem 3rem;
+    background: rgb(41, 41, 41);
+    color: rgb(187, 187, 187);
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+.todo-container {
+    background: white;
+    padding: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    background: rgb(41, 41, 41);
+}
